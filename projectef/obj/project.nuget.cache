@@ -1,15 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "6M6XIXpyzdYcEAO0i/hclpP3//lh0XQtkGQ2hcW+FRaZ5sYVP2Rk+QxnUafKE951oy23wLO/s9vcA/z17kdang==",
+  "dgSpecHash": "wgGL/gVHu8pmLO6KoVfMSOgoFTyR5+bkdvmjUDGh27YOZRYKrqTmictvm/CalTH37VIK8n0FDcnrNJDvh8GHGA==",
   "success": true,
   "projectFilePath": "D:\\platzi\\EF\\projectef\\projectef.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\win10\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.3\\microsoft.entityframeworkcore.abstractions.6.0.3.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.3\\microsoft.entityframeworkcore.analyzers.6.0.3.nupkg.sha512",
+    "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.3\\microsoft.entityframeworkcore.design.6.0.3.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\6.0.3\\microsoft.entityframeworkcore.inmemory.6.0.3.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.3\\microsoft.entityframeworkcore.relational.6.0.3.nupkg.sha512",
     "C:\\Users\\win10\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.3\\microsoft.entityframeworkcore.sqlserver.6.0.3.nupkg.sha512",
