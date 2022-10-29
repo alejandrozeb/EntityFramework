@@ -23,7 +23,18 @@ app.MapGet("/api/tareas", async ([FromServices] TareasContext dbContext) =>
     return Results.Ok(dbContext.Tareas.Include(p => p.Categoria).Where(p => p.PrioridadTarea == projectef.Models.Prioridad.Alta));
 });
 
-app.MapPut("/api/tareas/{id}", async ([FromServices] TareasContext dbContext, [FromBody] Tarea tarea,[FromRoute] Guid id ) =>
+app.MapPost("/api/tareas", async ([FromServices] TareasContext dbContext, [FromBody] Tarea tarea) =>
+{
+    tarea.TareaId = Guid.NewGuid();
+    tarea.FechaCreacion = DateTime.Now;
+    await dbContext.AddAsync(tarea);
+    // await dbContext.Tareas.AddAsync(tarea);
+    await dbContext.SaveChangesAsync();
+
+    return Results.Ok();
+});
+
+app.MapPut("/api/tareas/{id}", async ([FromServices] TareasContext dbContext, [FromBody] Tarea tarea, [FromRoute] Guid id) =>
 {
     var tareaActual = dbContext.Tareas.Find(id);
 
@@ -55,3 +66,12 @@ app.MapDelete("/api/tareas/{id}", async ([FromServices] TareasContext dbContext,
 });
 
 app.Run();
+
+/* 
+ * dotnet new web
+ dotnet add package Microsoft.EntityFrameworkCore --version 6.0.3
+dotnet tool install --local dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.5
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+ */
