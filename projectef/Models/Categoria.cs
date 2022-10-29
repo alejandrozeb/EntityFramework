@@ -1,5 +1,7 @@
 namespace projectef.Models;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
+
 public class Categoria
 {
     public Guid CategoriaId {get;set;}
@@ -10,5 +12,6 @@ public class Categoria
 
     public int Peso {get;set;}
 
+    [JsonIgnore]
     public virtual ICollection<Tarea> Tareas {get;set;}
 }
